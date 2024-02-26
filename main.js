@@ -219,66 +219,7 @@ class UIManager {
     const filteredTodos = this.todoManager.filterTodos(status);
     this.displayTodos(filteredTodos);
   }
-
-
-  // showAlertMessage(message, type) {
-  //   const alertBox = `
-  // <div class="alert alert-${type} shadow-lg mb-5 w-full">
-  //   <div>
-  //     <span>${message}</span>
-  //   </div>
-  // </div>`;
-  //   this.alertMessage.innerHTML = alertBox;
-  //   this.alertMessage.classList.remove("hide");
-  //   this.alertMessage.classList.add("show");
-  //   setTimeout(() => {
-  //     this.alertMessage.classList.remove("show");
-  //     this.alertMessage.classList.add("hide");
-  //   }, 3000);
-  // }
 }
-
-// Class responsible for managing the theme switcher
-// class ThemeSwitcher {
-// constructor(themes, html) {
-//   this.themes = themes;
-//   this.html = html;
-//   this.init();
-// }
-
-// init() {
-//   const theme = this.getThemeFromLocalStorage();
-//   if (theme) {
-//     this.setTheme(theme);
-//   }
-
-//   this.addThemeEventListeners();
-// }
-
-// addThemeEventListeners() {
-//   this.themes.forEach((theme) => {
-//     theme.addEventListener("click", () => {
-//       const themeName = theme.getAttribute("theme");
-//       this.setTheme(themeName);
-//       this.saveThemeToLocalStorage(themeName);
-//     });
-//   });
-// }
-
-// setTheme(themeName) {
-//   this.html.setAttribute("data-theme", themeName);
-// }
-
-// saveThemeToLocalStorage(themeName) {
-//   localStorage.setItem("theme", themeName);
-// }
-
-// getThemeFromLocalStorage() {
-//   return localStorage.getItem("theme");
-// }
-// }
-
-
 
 // Instantiating the classes
 const todoItemFormatter = new TodoItemFormatter();
